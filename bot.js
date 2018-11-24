@@ -8,9 +8,7 @@ client.on('ready', () => {
 
   console.log(`Logged in as ${client.user.tag}!`);
 
-client.user.setGame(`BC Angels`,'https://www.twitch.tv/MeeRcY')
 
-});
 
  
 
@@ -20,7 +18,7 @@ client.user.setGame(`BC Angels`,'https://www.twitch.tv/MeeRcY')
  
 
 client.on('message', message => {
-    var prefix = ''; // هنا تقدر تغير البرفكس
+    var prefix = '!'; // هنا تقدر تغير البرفكس
 var command = message.content.split(" ")[0];
 if(command == prefix + 'BC') { // الكوماند !bc
     var args = message.content.split(' ').slice(1).join(' ');
